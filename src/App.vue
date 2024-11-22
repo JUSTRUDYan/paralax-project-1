@@ -32,7 +32,7 @@ document.addEventListener("mousemove", e => {
     <div style="transform-style: preserve-3d; transform: rotateX(var(--move-y)) rotateY(var(--move-x)); transition: var(--transition)" class="layers__container h-[100vh] min-h-[500px]">
       <div style="transform: translateZ(-35px) scale(1.06)" class="layers__item bg-[url('/img/layer-1.jpg')]"></div>
       <div style="transform: translateZ(110px) scale(.88)" class="layers__item bg-[url('/img/layer-2.png')]"></div>
-      <div style="transform: translateZ(250px) scale(1);  margin-top: calc(var(--index) * 2.5); " class="layers__item flex items-center justify-center text-center ">
+      <div style="transform: translateZ(250px) scale(1);  margin-top: calc(var(--index) * 2.5); " class="layers__item flex items-center justify-center text-center">
         <div>
           <h1 style="font-size: calc(var(--index) * 2.9); letter-spacing: calc(var(--index) * -.15);" class="uppercase leading-[1em]">
             natural forest <span class="block">html / css</span>
@@ -53,11 +53,11 @@ document.addEventListener("mousemove", e => {
           </button>
         </div>
       </div>
-      <div style="transform: translateZ(300px) scale(.9)" class="layers__item">
+      <div style="transform: translateZ(300px) scale(.9)" class="layers__item pointer-events-none">
         <canvas class="rain"></canvas>
       </div>
-      <div style="transform: translateZ(380px) scale(.9)" class="layers__item bg-[url('/img/layer-5.png')]"></div>
-      <div style="transform: translateZ(420px)" class="layers__item bg-[url('/img/layer-6.png')]"></div>
+      <div style="transform: translateZ(380px) scale(.9)" class="layers__item bg-[url('/img/layer-5.png')] pointer-events-none"></div>
+      <div style="transform: translateZ(420px)" class="layers__item bg-[url('/img/layer-6.png')] pointer-events-none"></div>
     </div>
   </section>
 </template>
